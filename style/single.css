@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+}
+
+.container-fluid {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+section::-webkit-scrollbar{
+  width: 0px;
+  background-color: transparent;
+}
+
+section::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.btn{
+  color:white !important;
+}
+
+.move{
+  margin-bottom: 10px;
+}
+
+.scroll-button{
+  color: white !important;
+}
+
