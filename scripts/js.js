@@ -60,7 +60,7 @@ function adjustTechHeights() {
       cardBody.style.height = maxHeight + 'px';
     });
   }
-
+/*
 function adjustProjHeights() {
     const cards = document.querySelectorAll('.proj-body');
     let maxHeight = 0;
@@ -80,6 +80,10 @@ function adjustProjHeights() {
       cardBody.style.height = maxHeight + 'px';
     });
   }
+  window.addEventListener('load', adjustProjHeights);
+  window.addEventListener('resize', adjustProjHeights);
+  
+  */
 /*
 function adjustxdHeights() {
     const cards = document.querySelectorAll('.xd');
@@ -106,8 +110,7 @@ function adjustxdHeights() {
   window.addEventListener('load', adjustxdHeights);
   window.addEventListener('resize', adjustxdHeights);*/
 
-  window.addEventListener('load', adjustProjHeights);
-  window.addEventListener('resize', adjustProjHeights);
+  
 
   window.addEventListener('load', adjustTechHeights);
   window.addEventListener('resize', adjustTechHeights);
@@ -120,10 +123,8 @@ function adjustxdHeights() {
   window.addEventListener('resize', adjustCalcHeights);
 
   const cardGroup = document.getElementById('cardGroup');
-    cardGroup.addEventListener('wheel', (event) => {
-      event.preventDefault();
-      cardGroup.scrollTop += event.deltaY;
-    });
+  
+
 
     window.addEventListener('DOMContentLoaded', (event) => {
       resizeImages();

@@ -48,16 +48,7 @@ a:visited{
     align-items: center;
 }
 
-.card{
-    margin: auto;
-    transition-duration: 100ms;
-    box-shadow: 3px 3px 3px rgb(149, 161, 216);
-    flex-grow: 1;
-    border-radius: 3%;
-    overflow:hidden;
-}
-
-.xd{
+.cardLink{
     margin: 10px;
 }
 
@@ -65,20 +56,17 @@ a:visited{
     background-color: #b4b5c2;
 }
 
-.alert{
-    background-color: #f8d7da; /* Kolor tła alert boxa */
-    color: #721c24; /* Kolor czcionki */
-    padding: 10px; /* Wewnętrzne marginesy */
-    margin-bottom: 10px; /* Zewnętrzne marginesy */
-    border: 1px solid #f5c6cb; /* Grubość i kolor obramowania */
-    border-radius: 4px; /* Zakrzywienie rogów */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Cień */
+.card{
+    margin: auto;
+    transition-duration: 100ms;
+    box-shadow: 3px 3px 3px rgb(149, 161, 216);
+    flex-grow: 1;
+    border-radius: 10px;
+    overflow:hidden;
 }
 
-.fusion{
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-bottom: 0px;
+.xd{
+    margin: 10px;
 }
 
 .svgs{
@@ -89,3 +77,8 @@ a:visited{
     margin: auto; 
     text-align: center;
 }
+
+.carousel-indicators li {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      
+    }

@@ -97,10 +97,10 @@ submit2.addEventListener("click", function (event) {
         danger.textContent = "Wypełnij wszystkie pola!"
     }
 });
-
+/*
 info.addEventListener("click", function (event) {
     event.preventDefault();
 
     alert("PLA jest wykonany z odnawialnych surowców, takich jak skrobia kukurydziana lub trzcina cukrowa. Jego główne zastosowania to prototypowanie, modele i elementy dekoracyjne. \n\nPET-G jest odporny na uderzenia i ma wysoką wytrzymałość na rozciąganie. PET-G jest higroskopijny, co oznacza, że może wchłaniać wilgoć z powietrza, co może wpływać na jakość druku. Materiał ten jest często stosowany do produkcji opakowań, elementów maszynowych i prototypów.\n\nTPU to elastyczny materiał, który ma zdolność do powrotu do swojego pierwotnego kształtu po odkształceniu. Jest miękki, wytrzymały i elastyczny, co sprawia, że jest idealny do drukowania elementów, takich jak uszczelki, obudowy ochronne i elementy amortyzujące.TPU jest również odporny na ścieranie i chemikalia.Zastosowania TPU obejmują branżę obuwniczą, medycynę, elektronikę oraz produkcję sportową i rekreacyjną.");
 
-});
+});*/

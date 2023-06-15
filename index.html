@@ -17,28 +17,22 @@
   
 </head>
 <body>
-    <!--
-        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">primary</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarID">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" aria-current="xd" href="#">Home2</a>
-                    <a class="nav-link" aria-current="lmao" href="#">Home3</a>
-                </div>
-            </div>
-        </div>
-    </nav> -->
     <div class="container mx-auto">
         <div id="circle1" class="circle"></div>
         <div id="circle2" class="circle"></div>
         <div id="circle3" class="circle"></div>
         <div id="circle4" class="circle"></div>
+<div class="overlay"></div>
+        <div id="myModal" class="modal">
+            <h2>Informacje o materiałach</h2>
+            <p>PLA jest wykonany z odnawialnych surowców, takich jak skrobia kukurydziana lub trzcina cukrowa. Jego główne zastosowania to prototypowanie, modele i elementy dekoracyjne.</p><p>PET-G jest odporny na uderzenia i ma wysoką wytrzymałość na rozciąganie. PET-G jest higroskopijny, co oznacza, że może wchłaniać wilgoć z powietrza, co może wpływać na jakość druku. Materiał ten jest często stosowany do produkcji opakowań, elementów maszynowych i prototypów. <p>TPU to elastyczny materiał, który ma zdolność do powrotu do swojego pierwotnego kształtu po odkształceniu. Jest miękki, wytrzymały i elastyczny, co sprawia, że jest idealny do drukowania elementów, takich jak uszczelki, obudowy ochronne i elementy amortyzujące.TPU jest również odporny na ścieranie i chemikalia.</p>
+            <a class="btn btn-primary btn-sm " id="closeModal" role="button">Zamknij</a>
+        </div>
+        <div id="msgSent" class="modal">
+            <h2 class="text-success">Wysłano wiadomość</h2>
+            <a class="btn btn-primary btn-sm " id="closemsg" role="button">Zamknij</a>
+        </div>        
+        
 
         <section id="section1">
         <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
@@ -48,7 +42,7 @@
             <div class="col-xs-12 col-sm-10 col-md-8">
                     
                 <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|} mainrow">
-                    <div class="col-12 ttt"><a href="index.html">Michał Marczuk</a></div>   
+                    <div class="col-12 ttt"><a href="index.html">Michał Marczuk</a></div>                    
                 </div>
                 <div class="row just">
 
@@ -109,49 +103,49 @@
         
         <section id="section2">
             <div class="card-group col-12">
-                <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
                 
                     <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
-                        <div class="col-12 ttt"><a href="#section1">O mnie</a></div>  
+                        <div class="col-12 ttt">O mnie</div>  
                         
                         <div class="col-xs-12 col-lg-4">
                             <div class="card xd">
 
                                 <div class="card-body card-carousel">
 
-                                <div id="slider1" class="carousel slide" data-ride="carousel">
-                                  <ol class="carousel-indicators">
-                                    <li data-target="#slider1" data-slide-to="0" class="active"></li>
-                                    <li data-target="#slider1" data-slide-to="1"></li>
-                                    <li data-target="#slider1" data-slide-to="2"></li>
-                                    <li data-target="#slider1" data-slide-to="3"></li>
-                                  </ol>
-                                  <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="images/me.png" alt="jd">                                        
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="images/car1.jpg" alt="jd">                                        
+                                    <div id="slider1" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#slider1" data-slide-to="0" class="active"></li>
+                                            <li data-target="#slider1" data-slide-to="1"></li>
+                                            <li data-target="#slider1" data-slide-to="2"></li>
+                                            <li data-target="#slider1" data-slide-to="3"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/me.png" alt="jd">                                        
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/car1.jpg" alt="jd">                                        
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img src="images/car3.jpg" alt="jd">                                        
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img src="images/car4.jpg" alt="jd">                                        
+                                                </div>
+
                                         </div>
 
-                                        <div class="carousel-item">
-                                            <img src="images/car3.jpg" alt="jd">                                        
-                                        </div>
-
-                                        <div class="carousel-item">
-                                            <img src="images/car4.jpg" alt="jd">                                        
-                                        </div>
-
-                                  </div>
-                                  <a class="carousel-control-prev" href="#slider1" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a class="carousel-control-next" href="#slider1" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                                </div>                       
+                                        <a class="carousel-control-prev" href="#slider1" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#slider1" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>                       
                                     
                                 </div>
                             </div>
@@ -174,22 +168,25 @@
                             <div class="card xd">
                                 <div class="card-body">
                                     <h5 class="card-title">Kontakt</h5>
-                                <form class="text-left">
-                                    <div class="mb-3">
-                                    <label for="email" class="form-label">Adres e-mail</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Twój adres e-mail">
+                                    <form class="text-left">
+                                        <div class="mb-3">
+                                        <label for="email" class="form-label">Adres e-mail</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Twój adres e-mail">
+                                        </div>
+                                        <div class="mb-3">
+                                        <label for="message" class="form-label">Wiadomość</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Twoja wiadomość"></textarea>
+                                        </div>
+                                        <button id="sendmsg" class="btn btn-primary">Wyślij</button>
+                                    </form>
+                                    <div id="msgerror" class="text-danger">
+
                                     </div>
-                                    <div class="mb-3">
-                                    <label for="message" class="form-label">Wiadomość</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Twoja wiadomość"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Wyślij</button>
-                                </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+
                 <div class="text-center move">
                     <a href="#section1" class="btn btn-primary mx-2 smooth-scroll scroll-button"><i class="fas fa-chevron-up"></i></a>
                     <a href="#section3" class="btn btn-primary mx-2 smooth-scroll scroll-button"><i class="fas fa-chevron-down"></i></a>
@@ -284,10 +281,8 @@
                         <div class="col-xs-6 col-lg-3">
                             <div class="card tech-body">
                                 <div class="card-body">
-                                    <h5 class="card-title">C++</h5>
+                                    <h5 class="card-title">C/C++</h5>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0d6efd}</style><path d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z"/></svg>                            
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0d6efd}</style><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0d6efd}</style><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
@@ -299,7 +294,7 @@
                             <div class="card tech-body">
                                 <div class="card-body">
                                     <h5 class="card-title">Fusion 360</h5>
-                                    <img src="images/Fusion.png" class="fusion" height="50px">    
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#2a74fd}</style><path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z"/></svg>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>                
@@ -361,8 +356,8 @@
                         </div>
                         
                         <div class="col-xs-12 col-lg-4">
-                            <div class="card proj-body card-body">
-                                <div class=" cal">
+                            <div class="card proj-body ">
+                                <div class="card-body cal">
                                     <h5 class="card-title">Sklep internetowy</h5>
                                     <div class="card-subtitle text-muted"> W trakcie </div>
                                     <p class="card-text">
@@ -488,18 +483,25 @@
                         </div>
                 </div>
                 <div class="text-center move col-12">
+                    
                     <a href="#section4" class="btn btn-primary mx-2 smooth-scroll scroll-button"><i class="fas fa-chevron-up"></i></a>
+                    <a href="#section1" class="btn btn-primary mx-2 smooth-scroll scroll-button">Powrót</a>
                     <a href="#section4" class="btn btn-primary mx-2 smooth-scroll scroll-button disabled" aria-disabled="true"><i class="fas fa-chevron-down"></i></a>
                 </div>
             </div>
         </section>
 
     </div>
+    
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    <script src="scripts/js.js"></script>
     <script src="scripts/calc.js"></script>
+    
+    <script src="scripts/alert.js"></script>
+    <script src="scripts/js.js"></script>
 
     
 </body>
